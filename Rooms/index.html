@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<style>
+		body{
+			font-family: 'Ubuntu', sans-serif;
+			letter-spacing: 2px;
+		}
+		input[type='text'], input[type='date'], select{
+			width: 200px;
+			border: none;
+			border-radius: 3px;
+			outline: 0;
+			padding: 7px;
+		}
+		input[type='text']:focus, input[type='date']:focus, select:focus{
+				background-color:#D3D3D3;
+
+			}
+		input[type='text']:hover, input[type='date']:hover, select:hover{
+				background-color:#D3D3D3;
+
+			}
+		input[type='submit']{
+			font-family: 'Ubuntu', sans-serif;
+			padding:10px 30px;
+			font-weight:lighter;
+			text-decoration:none;
+			text-transform:uppercase;
+			border-radius:200px;
+			transition: background-color 0.2s, border 0.2s, color 0.2;
+			background-color:transparent;
+			color:white;
+			margin-right:13px;
+			border:1px solid white;
+		}
+		input[type='submit']:hover{
+			background-color:#bf55ec;
+		}
+	</style>
+</head>
+<body>
+		<div id="bg">
+			<div id="f1">
+				<table cellspacing="17">
+					<tr id="tr1">
+						<th width="20%" height="50px">VEG FOOD CATEGORIES</td>
+						<th width="20%" height="50px">NON-VEG FOOD CATEGORIES</td>
+						<th width="20%" height="50px">QUANTITY</td>
+						<td rowspan="2"><input type="submit" value="PLACE ORDER" name="sub" style="font-family: 'Ubuntu', sans-serif;" onclick="popup()"></td>
+					</tr>
+					<tr id="tr2">
+						<td width="20%" height="50px">
+							<center><select style="font-family: 'Ubuntu', sans-serif;">
+								<option>Choice Any Item</option>
+								<option>VEG-BURGER(1 pis)(Rs.35)</option>
+								<option>VEG-PIZZA(1 pis)(Rs.35)</option>
+								<option>VEG-NOODLES(1 plate)(Rs.30)</option>
+								<option>VEG-SANDWICH(1 pis)(Rs.30)</option>
+								<option>CHAPATHI(2 pis) WITH VEG CURRY(Rs.30)</option>
+								<option>VEG-RICE(1 plate)(Rs.30)</option>
+								<option>VEG BIRYANI(1 plate)(Rs.100)</option>
+							</select></center>
+						</td>
+						<td width="20%" height="50px">
+							<center><select style="font-family: 'Ubuntu', sans-serif;">
+								<option>Choice Any Item</option>
+								<option>CHICKEN-BURGER(1 pis)(Rs.45)</option>
+								<option>CHICKEN-PIZZA(1 pis)(Rs.45)</option>
+								<option>CHICKEN-NOODLES(1 plate)(Rs.40)</option>
+								<option>VEG-SANDWICH(1 pis)(Rs.40)</option>
+								<option>CHAPATHI(2 pis) WITH CHICKEN CURRY(1 pis)(Rs.35)</option>
+								<option>NON-VEG RICE(1 plate)(Rs.40)</option>
+								<option>CHICKEN-CURRY(1 plate)(Rs.80)</option>
+								<option>CHICKEN-BIRYANI(1 plate)(Rs.120)</option>
+							</select></center>
+						</td>
+						<td width="20% height="50px">
+							<center><select style="font-family: 'Ubuntu', sans-serif;">
+								<option>x1</option>
+								<option>x2</option>
+								<option>x3</option>
+								<option>x4</option>
+								<option>x5</option>
+								<option>x6</option>
+							</select></center>
+						</td>
+						<!-- <td width="20% height="50px">
+							<center><select style="font-family: 'Ubuntu', sans-serif;">
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+								<option>6</option>
+								<option>7</option>
+								<option>8</option>
+								<option>9</option>
+								<option>10</option>
+							</select></center>
+						</td> -->
+					</tr>
+					<tr>
+						<th width="20%" height="50px">APPLY COUPON CODE</th>
+						<th width="20%" height="50px">WATER</th>
+						<th width="20%" height="50px">SELECT PAYMENT METHOD</th>
+						<td rowspan="2"><a href="../index.html"><input type="submit" value="Back To Home"></a></td>
+					</tr>
+					<tr>
+						<td width="20%" height="50px">
+							<center><input type="text" name="d1" placeholder="Enter Coupon Code"></center>
+						</td>
+						<td width="20%" height="50px">
+							<center><select style="font-family: 'Ubuntu', sans-serif;">
+								<option>REGULAR</option>
+								<option>MINERAL</option>
+							</select></center>
+						</td>
+						<td width="20%" height="50px">
+							<center><select style="font-family: 'Ubuntu', sans-serif;">
+								<option>CASH</option>
+								<option>DEBIT CARD</option>
+								<option>CREDIT CARD</option>
+							</select></center>
+						</td>
+						<!-- <td width="20% height="50px">
+							<center><input type="text" name="d1" placeholder="Any Suggestion"></center>
+						</td> -->
+					</tr>
+				</table>
+			</div>
+		</div>
+		<script>
+		function popup(){
+			swal( "You have placed your order successfully", "success");
+		}
+		</script>
+</body>
+</html>

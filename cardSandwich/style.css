@@ -1,0 +1,42 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.post{
+	position: relative;
+	width: 100%;
+}
+.post:hover .post-s{
+	width: 100%;
+}
+.post img{
+	height: 260px;
+}
+.post-s{
+	width: 0;
+	height: 260px;
+	background: rgba(103,58,183,0.71);
+	position: absolute;
+	top: 0;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: 0.5s ease;
+}
+.post-s h4{
+	border: 6px solid white;
+	color: white;
+	font-size: 30px;
+	padding: 10px 30px;
+}
+.inner{
+	overflow: hidden;
+}
+.inner img{
+	transition: all 1.5s ease;
+}
+
+.inner:hover img{
+	transform: scale(1.5);
+}
