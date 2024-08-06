@@ -1,0 +1,208 @@
+body{
+	margin:0;
+	padding:0;
+	background:#efefef;
+	font-size:16px;
+	color:#777;
+	font-family:sans-serif;
+	font-weight:300;
+}
+
+/********************************** popup ********************************/
+
+#popupmain{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.7);
+	z-index: 1001;
+}
+#popup{
+	width: 500px;
+	height: 250px;
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) , url(popup.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	box-shadow: 2px 2px 5px 3px white;
+	text-align: center;
+}
+#heading{
+	transform: translateY(50px);
+	color: white;
+	font-family: 'Slabo 27px', serif;
+}
+#emailId{
+	width: 60%;
+	padding: 5px;
+	margin-top: 80px;
+	margin-bottom: 20px;
+	font-family: 'Slabo 27px', serif;
+}
+.submitId{
+	background-color: #0fc0fa;
+	border: none;
+	font-size: 1rem;
+	padding: 0.6rem 1rem;
+	color: white;
+	font-family: 'Slabo 27px', serif;
+}
+#login-box{
+	position:relative;
+	margin:5% auto;
+	height:400px;
+	width:600px;
+	background:#fff;
+	box-shadow:0 2px 4px rgba(0,0,0,0.6);
+}
+
+.left-box{
+	position:absolute;
+	top:0;
+	box-sizing:border-box;
+	padding:40px;
+	width:300px;
+	height:400px;
+}
+
+h1{
+	margin:0 0 20px 0;
+	font-weight:300;
+	font-size:28px;
+}
+
+input[type="text"],input[type="email"],input[type="password"]{
+	display:block;
+	box-sizing:border-box;
+	margin-bottom:20px;
+	padding:4px;
+	width:220px;
+	height:32px;
+	border:none;
+	outline:none;
+	border-bottom:1px solid #aaa;
+	font-family:sans-serif;
+	font-weight:400;
+	font-size:15px;
+	transition:0.2s ease;
+}
+
+input[type="submit"]{
+	margin-bottom:28px;
+	width:120px;
+	height:32px;
+	background:#f44336;
+	border:none;
+	border-radius:2px;
+	color:#fff;
+	font-family:sans-serif;
+	font-weight:500;
+	text-transform:uppercase;
+	transition:0.2s ease;
+	cursor:pointer;
+}
+
+input[type="submit"]:hover,input[type="submit"]:focus{
+	background:#ff5722;
+	transition:0.2s ease;
+}
+
+.right-box{
+	position:absolute;
+	top:0;
+	right:0;
+	box-sizing:border-box;
+	padding:40px;
+	width:300px;
+	height:400px;
+	background-image:url(image1.jpg);
+	background-size:cover;
+	background-position:center;
+}
+
+.or{
+	position:absolute;
+	top:180px;
+	left:280px;
+	width:40px;
+	height:40px;
+	background:#efefef;
+	border-radius:50%;
+	box-shadow:0 2px 4px rgba(0,0,0,0.6);
+	line-height:40px;
+	text-align:center;
+}
+
+.right-box .signinwith{
+	display:block;
+	margin-bottom:40px;
+	font-size:28px;
+	color:#fff;
+	text-align:center;
+	text-shadow:0 2px 4px rgba(0,0,0,0.6);
+}
+
+button.social{
+	margin-bottom:20px;
+	width:220px;
+	height:36px;
+	border:none;
+	border-radius:2px;
+	color:#fff;
+	font-family:sans-serif;
+	font-weight:500;
+	transition:0.2s ease;
+	cursor:pointer;
+}
+
+.facebook{
+	background:#32508e;
+}
+
+.twitter{
+	background:#55acee;
+}
+
+.google{
+	background:#dd4b39;
+}
+
+.left-box a{
+	text-decoration:none;
+	line-height:20px;
+	color:#777;
+	font-size:18px;
+}
+.left-box a:hover{
+	color:#ffc107;
+}
+
+.inner{
+	overflow: hidden; /*if we remove overflow:hidden then image will zoom out over the card*/
+}
+.inner img{
+	transition: all 1.5s ease;
+}
+.inner:hover img{
+	transform: scale(1.5);
+}
+/********************************** typed.js *************************************/
+#typed::after {
+	content: '|';
+	display: inline;
+	animation: blink 0.7s infinite;
+}
+#typed{
+	color: white;
+	font-size: 42px;
+	text-transform: uppercase;
+	font-family: 'Flamenco', cursive;
+}
+@keyframes blink{
+	0%{ opacity: 1; }
+	50%{ opacity: 0; }
+	100%{ opacity: 1; }
+}

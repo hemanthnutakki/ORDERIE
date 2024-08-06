@@ -1,0 +1,87 @@
+body{
+    background-image: url(https://wallpapercave.com/wp/wp2581365.jpg); 
+}
+
+#login{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+
+#login_bg{
+    /* opacity: 90%; */
+    height: 700px;
+    width: 550px;
+}
+#login_total{
+    font-family: 'Montserrat', sans-serif;
+}
+
+#login_main{
+    background-color: rgb(245, 245, 241); 
+    margin: 100px 100px 50px 0px;
+    width: 450px;
+    display:inline-block;
+    border-radius: 25px;
+}
+
+
+ #avatar_logo{
+     height: 80px;
+     padding-left: 36%;
+     margin-top: -6%;
+     margin-left: 5%;
+  }
+#login_main h1{
+    text-align: center;
+    font-size: 2em;
+    margin-top: 1%;
+}
+#login_main p{
+    margin: 0 15%;
+    margin-bottom: 10px;
+    font-size: 1.5 em;
+}
+#login_main input[type="email"], input[type="password"]{
+    border: none;
+    margin-bottom: 5%;
+    width: 70%;
+margin-left: 15%;
+border-bottom: 2px solid black;
+background-color: rgba(214, 214, 211, 0.397);
+outline: none;
+
+} 
+
+#login_main input[type="submit"]{
+    width: 70%;
+    /* margin-left: 15%;
+    margin-top: 5%; */
+    margin: 5% 15%;
+    height: 35px;
+    background-color: coral;
+    border-radius:25px ;
+    color: white;
+    
+}
+
+#login_main input[type="submit"]:hover{
+    cursor: pointer;
+    background-color: rgb(219, 204, 71);
+    color: black;
+}
+
+#login_main a{
+    line-height: 20px;
+    color:rgb(55, 100, 184);
+    margin: 5% 15%;
+    padding-bottom: 5%;
+    text-decoration: none;
+    
+}
+
+#login_main a:hover{
+    color:red;
+}
